@@ -14,11 +14,9 @@ module.exports = function (app, shopData) {
 
     app.get('/search-result', function (req, res) {
         //searching in the database
-        // res.send("You searched for: " + req.query.keyword);
         const q = req.query.keyword;
-        // console.log(q);
         let sqlquery = `SELECT * FROM  books where name LIKE "%${q}%"`;
-        console.log(sqlquery);
+
         db.query(sqlquery, (err, result) => {
             if (err) {
                 res.redirect('./');
@@ -73,7 +71,7 @@ module.exports = function (app, shopData) {
 
     app.get('/bargainbooks', (req, res) => {
         let sqlquery = "SELECT * FROM books WHERE price > 20";
-        console.log(sqlquery);
+
         db.query(sqlquery, (err, result) => {
             if (err) {
                 res.redirect('./');

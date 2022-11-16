@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Bargain books by <%=shopName%>
+    </title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+    <h1>
+        <%=shopName%>: Bargain Books
+    </h1>
+    <ul>
+        <% for(var i=0; i< result.length; i++) {%>
+            <li>
+                <%=result[i].name%>
+                    <%=result[i].price%>
+            </li>
+            <%}%>
+    </ul>
+</body>
+
+</html>

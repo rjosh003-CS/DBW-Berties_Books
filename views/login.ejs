@@ -1,0 +1,23 @@
+<!-- template page for Register page -->
+<!doctype html>
+<html>
+  <head>
+    <title>Login for <%=shopName%></title>
+    <link rel="stylesheet"  type="text/css" href="main.css" />
+  </head>
+  <body>
+    <h1>Register for <%=shopName%></h1>
+    <form method="POST" action="/login">
+        <fieldset width="50%">
+            <legend>Login</legend>
+
+            <input id="email" type="text" name="email" placeholder="Enter your email or username" required />
+            <br>
+            <input id="password" type="password" name="password" placeholder="Enter your password" required />
+            <br>
+            <input type="submit" value="Login" />
+        </fieldset>
+    </form>
+    
+  </body>
+</html>

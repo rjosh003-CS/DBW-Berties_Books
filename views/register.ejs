@@ -1,3 +1,4 @@
+<!-- template page for Register page -->
 <!doctype html>
 <html>
   <head>
@@ -7,9 +8,10 @@
   <body>
     <h1>Register for <%=shopName%></h1>
     <form method="POST" action="/registered">
-        <p>First name: <input id="first" type="text" name="first" value="first name" /></p>
-        <p>Last name: <input id="last" type="text" name="last" value="last name" /></p>
-        <p>Email: <input id="email" type="email" name="email" value="email" /></p>
+        <p>First name: <input id="first" type="text" name="first" placeholder="first name" /></p>
+        <p>Last name: <input id="last" type="text" name="last" placeholder="last name" /></p>
+        <p>Email: <input id="email" type="email" name="email" placeholder="email" /></p>
+        <p>password: <input id="password" type="password" name="password" placeholder="password" /></p>
         <input type="submit" value="Register" />
       </form>
   </body>

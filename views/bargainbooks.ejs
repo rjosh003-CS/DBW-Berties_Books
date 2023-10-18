@@ -1,3 +1,4 @@
+<!-- template page for the bargain books page -->
 <!doctype html>
 <html>
 
@@ -14,8 +15,7 @@
     <ul>
         <% for(var i=0; i< result.length; i++) {%>
             <li>
-                <%=result[i].name%>
-                    <%=result[i].price%>
+                <%=result[i].name%>, £ <%=result[i].price%>
             </li>
             <%}%>
     </ul>

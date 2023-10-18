@@ -1,0 +1,31 @@
+<!-- template page for list page -->
+<!doctype html>
+<html>
+
+<head>
+    <title>
+        <%=shopName%>: list
+    </title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+    <h1>
+        <%=shopName%> Shop
+    </h1>
+    <br>
+    <h2>Here are the books that we sell :</h2>
+    <ul>
+        <% for(var i=0; i< result.length; i++) {%>
+            <li>
+                <a>
+                    <b>Title: </b>
+                    <%=result[i].name%>, <b> Price: </b> £ <%=result[i].price%>
+                </a>
+            </li>
+            <br>
+            <%}%>
+    </ul>
+</body>
+
+</html>

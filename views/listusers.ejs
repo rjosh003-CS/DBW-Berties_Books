@@ -1,0 +1,35 @@
+<!-- template page for list page -->
+<!doctype html>
+<html>
+
+<head>
+    <title>
+        <%=shopName%>: list
+    </title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+    <h1>
+        <%=shopName%> Shop
+    </h1>
+    <br>
+    <h2>Here are the list of users signed in:</h2>
+    <ul>
+        <% for(var i=0; i< result.length; i++) {%>
+            <li>
+                <a>
+                    <b>  First name: </b><%=result[i].first%>
+                    <span>,   </span>
+                    <b> Surname: </b> <%=result[i].last%>
+                    <span>,   </span>
+                    <b> email: </b> <%=result[i].email%>
+                    <span>.  </span>
+                </a>
+            </li>
+            <br>
+            <%}%>
+    </ul>
+</body>
+
+</html>
